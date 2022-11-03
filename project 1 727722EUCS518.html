@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<title>Document</title>
+<style>
+  html{
+    scroll-behavior: smooth;
+  }
+        body {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 7px;
+}
+
+.left {
+  left: 0;
+  background: #56CCF2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.right {
+  right: 0;
+  background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* overflow-y: scroll; */
+
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 30%;
+}
+
+</style>
+</head>
+<body>
+        <div class="split left">
+        <div class="centered">
+            <img src="D:\New folder (2)\PEAKY BLINDERS/suman.jpeg">
+            <h2 >Suman Adithya</h2>
+            <p>Computer Science Engineer</p>
+            <div class="buttonsTime">
+                <button type="submit">School</button><br><br>
+                <button type="submit">Diploma</button><br><br>
+                <button type="submit">Degree</button><br><br>
+            </div>
+        </div>
+        
+        </div>
+        <div class="split right">
+            <div class="right">
+              <h1>SHREE BALDEVDAS KIKANI VIDYAMANDIR</h1>
+              <img src="data:image/jpeg;base64,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">
+                <p>With a noble vision to educate thousands a team of young gujratis started the Gujrati Pustakalaya and Gujrati Vidyalaya simultaneously. As the inflow of the Gujratis into the rapid developing cotton city 
+                  increased, the need for a better school arose and it also led to a realization that teaching in Gujrati will not serve the purpose of imparting knowledge in Tamilnadu. As a result, English was introduced as a medium of instruction. Amidst a severe financial crisis, a formal inauguration of the school was arranged on 10th October 1951. 
+                  Shri Kishandas Kikani and Sri Gopaldas Kikani made a munificent offer which led to the school being name after their late brother as “Shri Baldevdas Kikani Vidhya Mandir” since then.</p><BR>
+        
+                <h2>SRI RAMAKRISHNA MISSION VIDAYALAYA POLYTECHNIC COLLEGE</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9zSV31gJECoNlCgoNSwvvKtFHZ-2_wdcc4BaroTZZCkEUS1CIrnNwX0q_o40XTIkwIUA&usqp=CAU">
+                <p>The Polytechnic College was founded in 1956 as a wing of the Rural Institute, called the School of Engineering, under the National Council for Rural Higher Education. In 1974, the Institute was affiliated to the State Board of Technical Education and Training, Government of Tamilnadu. Since its inception the college has made remarkable achievements and last year it was certified as an ISO 9001:2015 institute.
+
+                  The college is committed to provide quality educational services lays special emphasis on all-round development of personality by inculcating values, both secular and spiritual, in the student the wholesome education which is intended to provide a character building and man-making education is to produce enlightened citizens of our country.The institution is recognized by the AICTE and enjoys autonomous status since 1983.
+                  Medium of Instruction is English.
+                  Candidates belonging to other states are also eligible to apply, SF courses only.
+                  The computer department has internet facility open to students and the staff. Basic computer training is provided to all the students.
+                  Physical education is a part of its autonomous curriculum.
+                  Audit courses in value education, culture, ethics and other topics on personality development.
+                  Add-on courses in 2nd and 3rd year to achieve better employment.
+                  </p><br>
+
+                  <h3>SRI KRISHNA COLLEGE OF ENGINEERING AND TECHNOLOGY</h3>
+                  <img src="data:image/jpeg;base64,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">
+                  <p>Sri Krishna College of Engineering and Technology is the most sought after Institution among the premier technical Institutions in South India. With a decade of establishment in 1998, the Institution has marched towards the pinnacle of glory through its remarkable achievements in the field of Engineering Education.It is an autonomous Institution, accredited by NBA and has been offered ‘A’ Grade (3.42 out of 4 scale) by NAAC for its academic excellence. It offers 8 UG programmes, 9 PG programmes, 1 integrated programme and 7 research programs. The Institution offers an exciting academic environment with well qualified 354 dedicated faculty members to inspire and nurture the student fraternity. With industry drafted Choice Based Credit System (CBCS) curriculum and syllabi, the Institution takes every effort to bring its 
+                    students to the forefront of the society as skillful and responsible engineersBeing at this College has helped me to gain a wide range of skills and work experience to make my application for Engineering successful. Team work among the fellow mates helped everyone to improvise/build their interpersonal and technical skills. The quality of teaching and support that has been offered to me throughout my time has been great. Thanks to Sri Krishna!</p>
+              </div>
+          </div>
+
+</body>
+</html>
